@@ -1,0 +1,238 @@
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1.2em;
+	color: #434343;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, fieldset, table, td, th {
+	margin: 0;
+	padding: 0;
+}
+
+a:link,
+a:visited {
+	color: #0066CC;
+}
+
+a:hover,
+a:active {
+	color: #CC6600;
+}
+
+a img {
+	border: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.u {
+	color: #767676;
+}
+
+.empty {
+	color: #989898;
+}
+
+ul.inline li {
+	display: inline;
+	padding: 0 5px;
+}
+
+/* colors */
+.color1 {
+	color: #657f00;
+}
+
+.color2 {
+	color: #0277b4;
+}
+
+.color3 {
+	color: #ad5801;
+}
+
+.color4 {
+	color: #b80500;
+}
+
+.color5 {
+	color: #b39e12;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h1 a,
+h1 a:hover,
+h1 a:link,
+h1 a:visited,
+h1 a:active {
+	text-decoration: none;
+	color: #0277b4;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+/* Main */
+div#main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* Header */
+div#header {
+	border-bottom: 1px solid #cccccc;
+	margin: 50px 0;
+}
+
+div#searchbox form {
+	padding: 27px 0 0 75px;
+	background-image: url('images/logo.png');
+	background-repeat: no-repeat;
+	margin-top: 10px;
+}
+
+input[type="text"] {
+	height: 30px;
+	width: 82%;
+	padding-left: 5px;
+	font-size: 18px;
+}
+
+.bc {
+	border-bottom: 1px solid #E7E7E7;
+	border-right: 1px solid #E7E7E7;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sbtn {
+	background: none repeat scroll 0 0 #EEEEEE;
+	border-color: #CCCCCC #999999 #999999 #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	height: 35px;
+}
+
+input[type="submit"] {
+	background: transparent;
+	border: medium none;
+	color: #000000;
+	cursor: pointer;
+	font: 16px arial,sans-serif;
+	height: 35px;
+	margin: 0;
+	outline: 0 none;
+	padding: 0 10px;
+}
+
+/* Result */
+div#content {
+	width: 100%;
+}
+
+div#result {
+	padding: 0 10px;
+	float: left;
+}
+
+div#result img {
+	max-height: 200px;
+	max-width: 200px;
+	margin: 20px 0;
+}
+
+div.hbar {
+	width: 100%;
+	clear: both;
+	border-bottom: 1px dashed #cccccc;
+}
+
+div#similar_movies {
+	margin-top: 40px;
+	color: #666666;
+}
+
+div#similar_movies ol li {
+	padding: 25px 0 25px 25px;
+	border-top: 1px solid #cccccc;
+	height: 200px;
+}
+
+div#similar_movies ol li:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+div#similar_movies ol li img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+/* Rating */
+div#rating_container {
+	width: 300px;
+	float: left;
+}
+
+div#rating_container h3 {
+	font-size: 16px;
+}
+
+div#rating {
+	margin: 0 auto;
+	width: 250px;
+	padding-top: 100px;
+}
+
+div#popcorn {
+	margin: 20px 0;
+}
+
+div#popcorn img {
+	float: left;
+	border: none;
+}
+
+div#popcorn div.star {
+	width: 50px;
+	height: 50px;
+	background-image: url('images/pipoca_cinza.png');
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+div#popcorn div.star:hover,
+div#popcorn div.popcorn_hover {
+	background-image: url('images/pipoca.png');
+}
+
+
+/* Search */
+ol.search_result li {
+	padding: 25px 0;
+	border-top: 1px solid #cccccc;
+	height: 50px;
+}
+
+ol.search_result li:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+ol.search_result li img {
+	max-width: 50px;
+	max-height: 50px;
+}

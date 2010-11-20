@@ -1,0 +1,12 @@
+Carregar dados no banco:
+
+movies(id, name, rating)
+categories(id, name)
+tags(id, name, relevance)
+movies_ratings(movie, vector)
+movies_tags(movie, vector)
+movies_categories(movie, vector)
+movies_similaritye(movie1, movie2, users, tags, categories, final)
+
+
+Fazer benchmarking com o sistema de recomendação do próprio IMDb

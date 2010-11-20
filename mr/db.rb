@@ -18,3 +18,4 @@ end
 
 require 'mr/db/tables'
 require 'mr/db/importer'
+require 'mr/db/img_importer'

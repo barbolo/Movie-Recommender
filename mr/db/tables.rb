@@ -56,6 +56,7 @@ module MR
             t.integer :id
             t.string :name
             t.float :rating
+            t.text :img
           end
         end
       end
@@ -93,7 +94,7 @@ module MR
         ActiveRecord::Schema.define do
           create_table :movie_tags do |t|
             t.integer :movie_id
-            t.text :tag_id
+            t.integer :tag_id
           end
         end
       end
@@ -115,7 +116,7 @@ module MR
             t.float :users_ranking
             t.float :tags_ranking
             t.float :categories_ranking
-            t.text :final_ranking
+            t.float :final_ranking
           end
         end
       end

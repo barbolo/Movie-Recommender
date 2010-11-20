@@ -1,9 +1,5 @@
-module MR
-
-  class MovieTag < ActiveRecord::Base
-    belongs_to :movie
-    belongs_to :tag
-
-  end
+class MovieTag < ActiveRecord::Base
+  belongs_to :movie
+  belongs_to :tag
 
 end

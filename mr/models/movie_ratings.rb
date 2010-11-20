@@ -1,8 +1,4 @@
-module MR
-
-  class MovieRating < ActiveRecord::Base
-    belongs_to :movie
-
-  end
+class MovieRating < ActiveRecord::Base
+  belongs_to :movie
 
 end

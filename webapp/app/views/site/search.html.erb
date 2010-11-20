@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<link href="/favicon.png" rel="shortcut icon" />
+	<%= stylesheet_link_tag('style.css') %>
+	<title>Movie Recommender</title>
+</head>
+
+<body>
+	<div id="main">
+		
+		<div id="header">
+			<h1><%= link_to 'Movie Recommender', root_path, :class => "color2" %></h1>
+			
+			<div id="searchbox">
+				<% form_tag url_for(:controller => 'site', :action => 'search'), :method => 'get' do %>
+					<% search_field_value = params[:q].nil? ? 'Search a 5-star movie' : params[:q] %>
+					<%= text_field_tag 'q', search_field_value %>
+					<span class="bc"><span class="sbtn">
+						<%= submit_tag 'Search' %>
+					</span></span>
+				<% end %>
+			</div><br/>
+		</div>
+		
+		<ol class="search_result">
+		<% @movies.each do |m|%>
+			<li>
+				<%= image_tag(m.img) if m.img %>
+				<span><%= link_to m.name, :action => 'movie', :id => m.id %></span>
+			</li>
+		
+		<% end %>
+		</ol>
+	
+	
+	
+	
+
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+
+<%= javascript_include_tag("jquery-1.4.2.min.js")%>
+<%= javascript_include_tag("functions.js")%>
+
+</body>
+
+</html>
